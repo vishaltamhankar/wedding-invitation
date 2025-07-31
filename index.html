@@ -1,111 +1,215 @@
-
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Rohan & Jessie Wedding Invite</title>
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Open Sans', sans-serif;
-      background: linear-gradient(to bottom, #fffaf0, #fce4ec);
-      overflow-x: hidden;
-    }
-    header {
-      text-align: center;
-      padding: 60px 20px;
-      background-color: #f8bbd0;
-      color: #6a1b9a;
-      animation: fadeIn 2s ease-in;
-    }
-    header h1 {
-      font-family: 'Great Vibes', cursive;
-      font-size: 3em;
-      margin: 0;
-    }
-    header p {
-      font-size: 1.2em;
-    }
-    section {
-      padding: 40px 20px;
-      text-align: center;
-      animation: fadeInUp 1.5s ease-in;
-    }
-    .rsvp-button {
-      background-color: #ba68c8;
-      color: white;
-      border: none;
-      padding: 15px 30px;
-      font-size: 1em;
-      border-radius: 30px;
-      cursor: pointer;
-      transition: background 0.3s;
-    }
-    .rsvp-button:hover {
-      background-color: #9c27b0;
-    }
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Wedding Invite </title>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&amp;family=Open+Sans&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display&display=swap" rel="stylesheet">
+<style>
+  body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background: url('https://www.transparenttextures.com/patterns/flowers.png'), linear-gradient(to bottom, #fffaf0, #fce4ec);
+    background-repeat: repeat;
+    overflow-x: hidden;
+    color: #4b2e2e;
+  }
 
-    .modal {
-      display: none;
-      position: fixed;
-      z-index: 1000;
-      left: 0; top: 0;
-      width: 100%; height: 100%;
-      background: rgba(0,0,0,0.6);
-      justify-content: center;
-      align-items: center;
-    }
-    .modal-content {
-      background: #fff;
-      padding: 30px;
-      border-radius: 10px;
-      width: 90%;
-      max-width: 500px;
-      text-align: left;
-    }
-    .modal-content h2 {
-      margin-top: 0;
-      font-family: 'Great Vibes', cursive;
-    }
-    .modal-content input, .modal-content textarea {
-      width: 100%;
-      padding: 10px;
-      margin: 10px 0;
-      border-radius: 5px;
-      border: 1px solid #ccc;
-    }
-    .close {
-      float: right;
-      font-size: 1.5em;
-      cursor: pointer;
-    }
+  .container {
+    border: 10px solid #f3e5f5;
+    padding: 40px;
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: #fffaf0;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  }
 
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-    @keyframes fadeInUp {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-  </style>
+  
+
+header {
+  text-align: center;
+  padding: 0 20px 10px 20px;
+  margin-top: -40px;
+  background-color: #fffaf0;
+  color: #6a1b9a;
+  animation: fadeIn 2s ease-in;
+  position: relative;
+  z-index: 0;
+  will-change: opacity;
+  transform: translateZ(0);
+  max-width: 500px;
+  margin: -40px auto 0 auto; 
+}
+
+
+
+  header h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3em;
+    margin: 0;
+  }
+
+  header p {
+    font-size: 1.2em;
+  }
+
+  section {
+    
+    text-align: center;
+    animation: fadeInUp 1.5s ease-in;
+  }
+  
+  h1 {
+    font-family: 'Great Vibes', cursive;
+    color: #D4AF37;
+	 font-size: 3em;
+    text-align: center;
+  }
+  
+  h2 {
+    font-family: 'Great Vibes', cursive;
+    color: #D4AF37;
+    text-align: center;
+  }
+  
+h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2em;
+ color: #D4AF37;
+}
+
+
+  hr {
+    border: 0;
+    height: 1px;
+    background: linear-gradient(to right, #f3e5f5, #D4AF37, #f3e5f5);
+    margin: 30px 0;
+  }
+
+  .rsvp-button {
+    background-color: #4B0082;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1em;
+    border-radius: 30px;
+    cursor: pointer;
+    display: block;
+    margin: 30px auto;
+    transition: background 0.3s;
+  }
+
+  .rsvp-button:hover {
+    background-color: #732d91;
+  }
+
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.6);
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modal-content {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+    text-align: left;
+  }
+
+  .modal-content h2 {
+    margin-top: 0;
+    font-family: 'Great Vibes', cursive;
+    color: #D4AF37;
+  }
+
+  .modal-content input, .modal-content textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+
+  .close {
+    float: right;
+    font-size: 1.5em;
+    cursor: pointer;
+  }
+
+p {
+    color: #D4AF37; /* Soft elegant brown */
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .image-wrapper {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  height: 280px; /* ensures the left image has space */
+}
+
+.image-wrapper img {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+</style>
 </head>
 <body>
 
+<div class="container" >
+<!-- <img src="Bells.jpg" alt="Wedding Bells" style="display: block; margin: 0 auto; max-width: 150px; padding-top: 20px;"/> -->
+
+
+<div class="images-wrapper" style="position: relative; z-index: 1; height: 280px;">
+  
+<img src="Top flower.jpg" alt="Top flower"
+     style="position: absolute; top: 0; left: 0; height: 250px; z-index: 2;" />
+<img src="Bells.jpg" alt="Bells"
+     style="position: absolute; top: 0; left: 50%; transform: translateX(-50%);
+        max-width: 250px; height: auto; z-index: 3;" />
+		
+		<img src="RJ.jpg" alt="RJ"
+     style="position: absolute; top: 0; right: 0; height: 250px; z-index: 2;" />
+
+</div>
+
 <header>
-  <h1>Rohan & Jessie</h1>
-  <p>Join us on 14 Dec 2025 in Navi Mumbai</p>
+<h1 style="margin-top: 0;">Ayesha &amp; Timothy Coelho</h1>
+<p>are delighted to invite you to the wedding reception of their son</p>
+<h1> Rohan</h1> 
+<h2>With</h2>
+<h1>Jessie </h1>
+<p> daughter of Catherine and Justin Lemos </p>	
 </header>
-
+<img src="Rings.jpg" alt="Rings" style="display: block; margin: 0 auto; max-width: 150px; padding-top: 0px;margin-bottom: 0;"/>
 <section>
-  <h2>We are excited to celebrate our love with you!</h2>
-  <p><br>Venue: Navi Mumbai<br><br>Date: 14 Dec 2025</p>
+<h2>Venue Details</h2>
+<h3>Imperial Banquets, Vashi, Navi Mumbai</h3>
+<h3>Date: 14 Dec 2025</h3>
+<h3>Time: 07:30 PM</h3>
 </section>
-
 <section>
-  <button class="rsvp-button" onclick="document.getElementById('rsvpModal').style.display='flex'">RSVP</button>
+<button class="rsvp-button" onclick="document.getElementById('rsvpModal').style.display='flex'">I will attend</button>
 </section>
 
 <div id="rsvpModal" class="modal">
@@ -120,7 +224,7 @@
     </form>
     <p id="responseMsg" style="color: green;"></p>
   </div>
-</div>
+</div>	
 
 <script>
   window.onclick = function(event) {
@@ -156,6 +260,5 @@
     }, 2000);
   });
 </script>
-
 </body>
 </html>
