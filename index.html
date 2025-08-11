@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-
 <html lang="en">
-<head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- <meta content="width=device-width, initial-scale=1.0" name="viewport"/> -->
-<title>Wedding Invite </title>
-<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&amp;family=Open+Sans&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display&display=swap" rel="stylesheet">
-<style>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<title>Rohan Weds Jessie </title>
+			<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&amp;family=Open+Sans&amp;display=swap" rel="stylesheet"/>
+			<link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+			<meta property="og:title" content="Rohan & Jessie – Wedding Invitation"/>
+			<meta property="og:description" content="You're invited to celebrate with us on 14th Dec 2025 at Imperial Banquets, Navi Mumbai."/>
+			<style>
   body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
@@ -16,12 +16,13 @@
     background-repeat: repeat;
     overflow-x: hidden;
     color: #4b2e2e;
+	font-size: 16px;
   }
 
   .container {
     border: 10px solid #f3e5f5;
     padding: 40px;
-    margin: 20px auto;
+    margin: 40px auto;
     max-width: 800px;
     background-color: #fffaf0;
     box-shadow: 0 0 20px rgba(0,0,0,0.1);
@@ -31,25 +32,24 @@
 
 header {
   text-align: center;
-  padding: 0 20px 10px 20px;
-  margin-top: -40px;
+  <!-- padding: 0 20px 10px 20px; -->
+  <!-- margin-top: -40px; -->
   background-color: #fffaf0;
   color: #6a1b9a;
   animation: fadeIn 2s ease-in;
-  position: relative;
-  z-index: 0;
-  will-change: opacity;
-  transform: translateZ(0);
+  <!-- position: relative; -->
+  <!-- z-index: 0; -->
+  <!-- will-change: opacity; -->
+  <!-- transform: translateZ(0); -->
   max-width: 500px;
   margin: -40px auto 0 auto; 
 }
-
-
 
   header h1 {
     font-family: 'Great Vibes', cursive;
     font-size: 2.5em;
     margin: 0;
+	color: #D4AF37;
   }
 
   header p {
@@ -57,38 +57,45 @@ header {
   }
 
   section {
-    
     text-align: center;
     animation: fadeInUp 1.5s ease-in;
+	padding: 30px 0;
   }
   
-  h1 {
-    font-family: 'Great Vibes', cursive;
-    color: #D4AF37;
-	 font-size: 3em;
-    text-align: center;
-  }
+  <!-- h1 { -->
+    <!-- font-family: 'Great Vibes', cursive; -->
+    <!-- color: #D4AF37; -->
+	 <!-- font-size: 3em; -->
+    <!-- text-align: center; -->
+  <!-- } -->
   
   h2 {
     font-family: 'Great Vibes', cursive;
     color: #D4AF37;
-    text-align: center;
+    <!-- text-align: center; -->
+	font-size: 2em;
   }
   
 h3 {
   font-family: 'Playfair Display', serif;
   font-size: 1.2em;
- color: #D4AF37;
+  color: #D4AF37;
+  margin: 10px 0;
 }
 
+  <!-- hr { -->
+    <!-- border: 0; -->
+    <!-- height: 1px; -->
+    <!-- background: linear-gradient(to right, #f3e5f5, #D4AF37, #f3e5f5); -->
+    <!-- margin: 30px 0; -->
+  <!-- } -->
 
-  hr {
-    border: 0;
-    height: 1px;
-    background: linear-gradient(to right, #f3e5f5, #D4AF37, #f3e5f5);
-    margin: 30px 0;
-  }
-
+.rsvp-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap; /* ensures responsiveness on small screens */
+}
   .rsvp-button {
     background-color: #4B0082;
     color: white;
@@ -97,13 +104,15 @@ h3 {
     font-size: 1em;
     border-radius: 30px;
     cursor: pointer;
-    display: block;
-    margin: 30px auto;
-    transition: background 0.3s;
+	flex: 1 1 auto;
+  max-width: 200px;
+    <!-- display: block; -->
+    <!-- margin: 30px auto; -->
+    <!-- transition: background 0.3s; -->
   }
 
   .rsvp-button:hover {
-    background-color: #732d91;
+    background-color: #9162c4;
   }
 
   .modal {
@@ -159,14 +168,6 @@ p {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
   }
-  
-  <!-- .image-wrapper { -->
-  <!-- position: relative; -->
-  <!-- width: 100%; -->
-  <!-- margin: 0; -->
-  <!-- padding: 0; -->
-  <!-- height: 280px; /* ensures the left image has space */ -->
-<!-- } -->
 
 .image-wrapper img {
   display: block;
@@ -245,93 +246,160 @@ img {
   }
 }
 </style>
-</head>
-<body>
-
-<div class="container" >
-<!-- <img src="Bells.jpg" alt="Wedding Bells" style="display: block; margin: 0 auto; max-width: 150px; padding-top: 20px;"/> -->
-
-
-<div class="images-wrapper">
-  <img src="https://raw.githubusercontent.com/vishaltamhankar/wedding-invitation/main/TopFlower.jpg"
-       alt="Top flower"
-       class="responsive-abs-image" />
-
-  <img src="https://raw.githubusercontent.com/vishaltamhankar/wedding-invitation/main/Bells.jpg"
-       alt="Bells"
-       class="bells-img" />
-
-  <img src="https://raw.githubusercontent.com/vishaltamhankar/wedding-invitation/main/RJ.jpg"
-       alt="RJ"
-       class="right-img" />
-</div>
-
-<header>
-<h1 style="margin-top: 0;">Ayesha &amp; Timothy Coelho</h1>
-<p>are delighted to invite you to the wedding reception of their son</p>
-<h1> Rohan</h1> 
-<h2>With</h2>
-<h1>Jessie </h1>
-<p> daughter of Catherine and Justin Lemos </p>	
-</header>
-<img src="Rings.jpg" alt="Rings" style="display: block; margin: 0 auto; max-width: 150px; padding-top: 0px;margin-bottom: 0;"/>
-<section>
-<h2>Venue Details</h2>
-<h3>Imperial Banquets, Vashi, Navi Mumbai</h3>
-<h3>Date: 14 Dec 2025</h3>
-<h3>Time: 07:30 PM</h3>
-</section>
-<section>
-<button class="rsvp-button" onclick="document.getElementById('rsvpModal').style.display='flex'">I will attend</button>
-</section>
-
-<div id="rsvpModal" class="modal">
-  <div class="modal-content">
-    <span class="close" onclick="document.getElementById('rsvpModal').style.display='none'">&times;</span>
-    <h2>RSVP</h2>
-    <form id="rsvpForm">
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="number" name="guests" placeholder="Number of Guests" required />
-      <textarea name="message" placeholder="Message (optional)"></textarea>
-      <button type="submit" class="rsvp-button">Submit</button>
-    </form>
-    <p id="responseMsg" style="color: green;"></p>
+		</head>
+		<body>
+			<div class="container">
+				<div class="images-wrapper">
+					<img src="https://raw.githubusercontent.com/vishaltamhankar/wedding-invitation/main/TopFlower.jpg" alt="Top flower" class="responsive-abs-image"/>
+					<img src="https://raw.githubusercontent.com/vishaltamhankar/wedding-invitation/main/Bells.jpg" alt="Bells" class="bells-img"/>
+					<img src="https://raw.githubusercontent.com/vishaltamhankar/wedding-invitation/main/RJ.jpg" alt="RJ" class="right-img"/>
+				</div>
+				<header>
+					<p style="margin-top: 0; font-size:28px; font-family: 'Lora', serif;"><b>Ayesha & Timothy Coelho</b></p>
+					<p>are delighted to invite you to the wedding reception of their son</p>
+					<h1>Rohan</h1>
+					<h2>With</h2>
+					<h1>Jessie </h1>
+					<p>daughter of Catherine and Justin Lemos</p>
+				</header>
+				<img src="Rings.jpg" alt="Rings" style="display: block; margin: 0 auto; max-width: 150px; padding-top: 0px;margin-bottom: 0;"/>
+				<section>
+					<h2>Venue Details</h2>
+					<h3>Imperial Banquets, Vashi, Navi Mumbai</h3>
+					<h3>Date: 14 Dec 2025</h3>
+					<h3>Time: 07:30 PM</h3>
+				</section>
+				<!-- <section> -->
+					<!-- <button class="rsvp-button" onclick="document.getElementById('rsvpModal').style.display='flex'">I will attend</button> -->
+				<!-- </section> -->
+				 <div class="rsvp-buttons">
+      <button class="rsvp-button" onclick="openModal('Yes')">Will attend</button>
+      <button class="rsvp-button" onclick="openModal('No')">Will not attend</button>
+    <!-- </div> -->
+				<!-- <div id="rsvpModal" class="modal"> -->
+					<!-- <div class="modal-content"> -->
+						<!-- <span class="close" onclick="document.getElementById('rsvpModal').style.display='none'">&times;</span> -->
+						<!-- <h2>RSVP</h2> -->
+						<!-- <form id="rsvpForm"> -->
+							<!-- <input type="text" name="name" placeholder="Your Name" required/> -->
+							<!-- <input type="number" name="guests" placeholder="Number of Guests" required/> -->
+							<!-- <textarea name="message" placeholder="Message (optional)"/> -->
+							<!-- <button type="submit" class="rsvp-button">Submit</button> -->
+						<!-- </form> -->
+						<!-- <p id="responseMsg" style="color: green;"/> -->
+					<!-- </div> -->
+				<!-- </div> -->
+				<div id="rsvpModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2>RSVP</h2>
+      <form id="rsvpForm">
+        <input type="text" name="name" placeholder="Your Name" required />
+		<input type="email" name="email" placeholder="E-mail (optional)" />
+        <!-- <input type="number" name="guests" id="guestsField" placeholder="Number of Guests" required /> -->
+		<div id="guestContainer">
+			<input type="number" name="guests" id="guestsField" placeholder="Number of Guests" />
+		</div>
+		<input type="tel" name="phone" placeholder="Phone Number" required />
+        <textarea name="message" placeholder="Message (optional)"></textarea>
+         <input type="hidden" name="attending" id="attendingField" value="" />
+		 <!-- Honeypot field (completely hidden) -->
+		<input type="text" name="honeypot" class="honeypot" autocomplete="off" style="display:none;">
+        <button type="submit" class="rsvp-button">Submit</button>
+      </form>
+      <p id="responseMsg" style="color: green;"></p>
+    </div>
   </div>
-</div>	
+				<!-- <script> -->
+  <!-- window.onclick = function(event) { -->
+    <!-- const modal = document.getElementById('rsvpModal'); -->
+    <!-- if (event.target === modal) { -->
+      <!-- modal.style.display = "none"; -->
+    <!-- } -->
+  <!-- } -->
 
+  <!-- document.getElementById('rsvpForm').addEventListener('submit', function(e) { -->
+    <!-- e.preventDefault(); -->
+    <!-- const form = e.target; -->
+    <!-- const data = { -->
+      <!-- name: form.name.value, -->
+      <!-- guests: form.guests.value, -->
+      <!-- message: form.message.value -->
+    <!-- }; -->
+
+    <!-- fetch("https://script.google.com/macros/s/AKfycbzfi-CiRLb4eA32Se2WxIJwHTL1DIdXS7fLRNoE9z_iYlz_ktJLg3-WCAuQ4RpJXBt5zw/exec", { -->
+      <!-- method: "POST", -->
+      <!-- mode: "no-cors", -->
+      <!-- headers: { -->
+        <!-- "Content-Type": "application/json" -->
+      <!-- }, -->
+      <!-- body: JSON.stringify(data) -->
+    <!-- }); -->
+
+    <!-- document.getElementById('responseMsg').textContent = "RSVP submitted! Thank you."; -->
+    <!-- form.reset(); -->
+    <!-- setTimeout(() => { -->
+      <!-- document.getElementById('rsvpModal').style.display = 'none'; -->
+      <!-- document.getElementById('responseMsg').textContent = ""; -->
+    <!-- }, 2000); -->
+  <!-- }); -->
+<!-- </script> -->
 <script>
-  window.onclick = function(event) {
-    const modal = document.getElementById('rsvpModal');
-    if (event.target === modal) {
-      modal.style.display = "none";
+    function openModal(attendingStatus) {
+      document.getElementById('attendingField').value = attendingStatus;
+	  const guestContainer = document.getElementById('guestContainer');
+    const guestsField = document.getElementById('guestsField');
+
+    if (attendingStatus === 'Yes') {
+      guestContainer.style.display = 'block';
+      guestsField.required = true;
+    } else {
+      guestContainer.style.display = 'none';
+      guestsField.required = false;
+      guestsField.value = '';
     }
-  }
+      document.getElementById('rsvpModal').style.display = 'flex';
+    }
 
-  document.getElementById('rsvpForm').addEventListener('submit', function(e) {
-    e.preventDefault();
-    const form = e.target;
-    const data = {
-      name: form.name.value,
-      guests: form.guests.value,
-      message: form.message.value
-    };
-
-    fetch("https://script.google.com/macros/s/AKfycbzfi-CiRLb4eA32Se2WxIJwHTL1DIdXS7fLRNoE9z_iYlz_ktJLg3-WCAuQ4RpJXBt5zw/exec", {
-      method: "POST",
-      mode: "no-cors",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify(data)
-    });
-
-    document.getElementById('responseMsg').textContent = "RSVP submitted! Thank you.";
-    form.reset();
-    setTimeout(() => {
+    function closeModal() {
       document.getElementById('rsvpModal').style.display = 'none';
-      document.getElementById('responseMsg').textContent = "";
-    }, 2000);
-  });
-</script>
-</body>
-</html>
+    }
+
+    window.onclick = function(event) {
+      const modal = document.getElementById('rsvpModal');
+      if (event.target === modal) {
+        modal.style.display = "none";
+      }
+    }
+
+    document.getElementById('rsvpForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const form = e.target;
+      const data = {
+        name: form.name.value,
+		email: form.email ? form.email.value : "",
+		phone: form.phone.value,
+        guests: form.guests ? form.guests.value : "",
+        message: form.message.value,
+        attending: form.attending.value
+      };
+
+      fetch("https://script.google.com/macros/s/AKfycbzfi-CiRLb4eA32Se2WxIJwHTL1DIdXS7fLRNoE9z_iYlz_ktJLg3-WCAuQ4RpJXBt5zw/exec", {
+        method: "POST",
+		mode: "no-cors",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(data)
+      });
+
+      document.getElementById('responseMsg').textContent = "RSVP submitted! Thank you.";
+      form.reset();
+      setTimeout(() => {
+        closeModal();
+        document.getElementById('responseMsg').textContent = "";
+      }, 2000);
+    });
+  </script>
+			</body>
+		</html>
