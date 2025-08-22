@@ -2,18 +2,13 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8"/>
-		<meta name="viewport"
-		      content="width=device-width, initial-scale=1.0">
-			<title>Rohan Weds Jessie</title>
-			<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&amp;family=Open+Sans&amp;display=swap"
-			      rel="stylesheet"/>
-			<link href="https://fonts.googleapis.com/css2?family=Lora&display=swap"
-			      rel="stylesheet">
-				<meta property="og:title"
-				      content="Rohan & Jessie – Wedding Invitation"/>
-				<meta property="og:description"
-				      content="You're invited to celebrate with us on 14th Dec 2025 at Imperial Banquets, Navi Mumbai."/>
-				<style>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<title>Rohan Weds Jessie </title>
+			<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&amp;family=Open+Sans&amp;display=swap" rel="stylesheet"/>
+			<link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+			<meta property="og:title" content="Rohan & Jessie – Wedding Invitation"/>
+			<meta property="og:description" content="You're invited to celebrate with us on 14th Dec 2025 at Imperial Banquets, Navi Mumbai."/>
+			<style>
     html, body {
   height: 100%;
   margin: 0;
@@ -35,7 +30,7 @@
 
     /* Overlay - behind text but not decorative images */
     .overlay {
-      position: fixed;
+      position: absolute;
       top: 0; left: 0;
       width: 100%; height: 100%;
       background: rgba(0,0,0,0.50); /* slightly darker for text readability */
@@ -224,95 +219,63 @@
 	section h2, section p, section h3 {
   text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
   font-size: 1.5em;
-					<!-- margin-bottom: 10px; -->
-					<!-- border-bottom: 2px solid #FFD700; -->
-					<!-- display: inline-block; -->
-					<!-- padding-bottom: 5px; -->
+  <!-- margin-bottom: 10px; -->
+  <!-- border-bottom: 2px solid #FFD700; -->
+  <!-- display: inline-block; -->
+  <!-- padding-bottom: 5px; -->
 }
-				</style>
-			</head>
-			<div class="overlay"/>
-			<body>
-				<div class="container">
-					<div class="images-wrapper">
-						<!-- <img src="https://raw.githubusercontent.com/vishaltamhankar/wedding-invitation/main/TopFlower.jpg" alt="Top flower" class="responsive-abs-image"/> -->
-						<!-- <img src="https://raw.githubusercontent.com/vishaltamhankar/wedding-invitation/main/Bells.jpg" alt="Bells" class="bells-img"/> -->
-						<img src="Bells.png"
-						     alt="Bells"
-						     class="bells-img"
-						     style="mix-blend-mode: screen; "/>
-						<!-- <img src="https://raw.githubusercontent.com/vishaltamhankar/wedding-invitation/main/RJ4.jpeg" alt="RJ" class="right-img"/> -->
-						<!-- <img src="RJ4.jpeg" alt="RJ" class="right-img"/> -->
-					</div>
-					<header>
-						<p style="margin-top: 0; font-size:28px; font-family: 'Lora', serif; font-size: 2.2em;">
-							<b>Ayesha & Timothy Coelho</b>
-						</p>
-					</br>
+</style>
+		</head>
+		<div class="overlay"></div>
+		<body>
+			<div class="container">
+				<div class="images-wrapper">
+					<!-- <img src="https://raw.githubusercontent.com/vishaltamhankar/wedding-invitation/main/TopFlower.jpg" alt="Top flower" class="responsive-abs-image"/> -->
+					<!-- <img src="https://raw.githubusercontent.com/vishaltamhankar/wedding-invitation/main/Bells.jpg" alt="Bells" class="bells-img"/> -->
+					<img src="Bells.png" alt="Bells" class="bells-img" style="mix-blend-mode: screen; "/>
+					<!-- <img src="https://raw.githubusercontent.com/vishaltamhankar/wedding-invitation/main/RJ4.jpeg" alt="RJ" class="right-img"/> -->
+					<!-- <img src="RJ4.jpeg" alt="RJ" class="right-img"/> -->
+				</div>
+				<header>
+					<p style="margin-top: 0; font-size:28px; font-family: 'Lora', serif; font-size: 2.2em;"><b>Ayesha & Timothy Coelho</b></p></br>
 					<p>are delighted to invite you to the wedding reception of their son</p>
 					<h1>Rohan</h1>
 					<h2>With</h2>
-					<h1>Jessie</h1>
+					<h1>Jessie </h1>
 					<p>daughter of Catherine and Justin Lemos</p>
 				</header>
-				<img src="Rings.png"
-				     alt="Rings"
-				     class="rings-img"
-				     style="display: block; margin: 0 auto; max-width: 150px; padding-top: 0px;margin-bottom: 0;"/>
+				<img src="Rings.png" alt="Rings" class="rings-img" style="display: block; margin: 0 auto; max-width: 150px; padding-top: 0px;margin-bottom: 0;"/>
 				<section>
 					<h2>Venue Details</h2>
 					<h3>Imperial Banquets, Vashi, Navi Mumbai</h3>
 					<h3>Date: 14 Dec 2025</h3>
 					<h3>Time: 07:30 PM</h3>
 				</section>
-				<div class="rsvp-buttons">
-					<button class="rsvp-button"
-					        onclick="openModal('Yes')">Will attend</button>
-					<button class="rsvp-button"
-					        onclick="openModal('No')">Will not attend</button>
-					<div id="rsvpModal"
-					     class="modal">
-						<div class="modal-content">
-							<span class="close"
-							      onclick="closeModal()">&times;</span>
-							<h2>RSVP</h2>
-							<form id="rsvpForm">
-								<input type="text"
-								       name="name"
-								       placeholder="Your Name"
-								       required/>
-								<input type="email"
-								       name="email"
-								       placeholder="E-mail (optional)"/>
-								<div id="guestContainer">
-									<input type="number"
-									       name="guests"
-									       id="guestsField"
-									       placeholder="Number of Guests"/>
-								</div>
-								<input type="tel"
-								       name="phone"
-								       placeholder="Phone Number"
-								       required/>
-								<textarea name="message"
-								          placeholder="Message (optional)"/>
-								<input type="hidden"
-								       name="attending"
-								       id="attendingField"
-								       value=""/>
-								<input type="text"
-								       name="honeypot"
-								       class="honeypot"
-								       autocomplete="off"
-								       style="display:none;">
-									<button type="submit"
-									        class="rsvp-button">Submit</button>
-								</form>
-								<p id="responseMsg"
-								   style="color: green;"/>
-							</div>
-						</div>
-						<script>
+				 <div class="rsvp-buttons">
+      <button class="rsvp-button" onclick="openModal('Yes')">Will attend</button>
+      <button class="rsvp-button" onclick="openModal('No')">Will not attend</button>
+
+				<div id="rsvpModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2>RSVP</h2>
+      <form id="rsvpForm">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="E-mail (optional)" />
+        <div id="guestContainer">
+          <input type="number" name="guests" id="guestsField" placeholder="Number of Guests" />
+        </div>
+        <input type="tel" name="phone" placeholder="Phone Number" required />
+        <textarea name="message" placeholder="Message (optional)"></textarea>
+        <input type="hidden" name="attending" id="attendingField" value="" />
+        <input type="text" name="honeypot" class="honeypot" autocomplete="off" style="display:none;">
+        <button type="submit" class="rsvp-button">Submit</button>
+      </form>
+      <p id="responseMsg" style="color: green;"></p>
+    </div>
+  </div>
+				
+<script>
     function openModal(attendingStatus) {
       document.getElementById('attendingField').value = attendingStatus;
 	  const guestContainer = document.getElementById('guestContainer');
@@ -368,8 +331,9 @@
         document.getElementById('responseMsg').textContent = "";
       }, 2000);
     });
-						</script>
-					</div>
-				</div>
+  </script>
+  </div>
+  </div>
+
 			</body>
 		</html>
