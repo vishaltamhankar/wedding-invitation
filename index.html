@@ -20,7 +20,7 @@ body {
   min-height: 100vh;
   background: url('RJ2_1.jpeg') no-repeat center center;
   background-size: cover;
-  background-attachment: fixed; /* works well on desktop */
+  background-attachment: fixed; /* ✅ desktop only */
   position: relative;
   color: #FFD700;
   font-size: 18px;
@@ -33,7 +33,7 @@ body {
     /* Overlay - behind text but not decorative images */
 	
 	.overlay {
-  position: fixed; /* ✅ fixed to cover entire viewport */
+  position: fixed; /* ✅ stays full screen */
   top: 0; left: 0;
   width: 100%; height: 100%;
   background: rgba(0,0,0,0.5);
@@ -219,10 +219,10 @@ body {
   }
 }
 
-/* Mobile fix — disable background-attachment: fixed */
 @media (max-width: 768px) {
   body {
-    background-attachment: scroll;
+    background-attachment: scroll; /* ✅ prevent zoom/white gap */
+    background-position: center top; /* keeps image aligned */
   }
 }
 	
