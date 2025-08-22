@@ -9,47 +9,55 @@
 			<meta property="og:title" content="Rohan & Jessie – Wedding Invitation"/>
 			<meta property="og:description" content="You're invited to celebrate with us on 14th Dec 2025 at Imperial Banquets, Navi Mumbai."/>
 			<style>
-    html, body {
+ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-
+  overflow-x: hidden;
 }
 
-body {
-  min-height: 100vh;
+.background {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
   background: url('RJ2_1.jpeg') no-repeat center center;
   background-size: cover;
-  background-attachment: fixed; /* ✅ desktop only */
-  position: relative;
-  color: #FFD700;
-  font-size: 18px;
-  overflow-x: hidden;
-  display: flex;
-  flex-direction: column;
+  z-index: -2; /* sits behind everything */
 }
+<!-- body { -->
+  <!-- min-height: 100vh; -->
+  <!-- background: url('RJ2_1.jpeg') no-repeat center center; -->
+  <!-- background-size: cover; -->
+  <!-- <!-- background-attachment: fixed; /* ✅ desktop only */ --> -->
+  <!-- position: relative; -->
+  <!-- color: #FFD700; -->
+  <!-- font-size: 18px; -->
+  <!-- overflow-x: hidden; -->
+  <!-- display: flex; -->
+  <!-- flex-direction: column; -->
+<!-- } -->
 
 
     /* Overlay - behind text but not decorative images */
 	
 	.overlay {
-  position: fixed; /* ✅ stays full screen */
+  position: fixed;
   top: 0; left: 0;
   width: 100%; height: 100%;
   background: rgba(0,0,0,0.5);
-  z-index: 1;
+  z-index: -1; /* above background, below content */
 }
 
     /* Main container */
     .container {
-      position: relative;
-      z-index: 2; /* sits above overlay */
-      padding: 40px;
-      max-width: 850px;
-      margin: 40px auto;
-      text-align: center;
-	  
-    }
+  position: relative;
+  z-index: 1;
+  max-width: 850px;
+  margin: 40px auto;
+  padding: 40px;
+  text-align: center;
+  color: #FFD700;
+}
 
     /* Header */
     header {
@@ -237,6 +245,7 @@ body {
 </style>
 		</head>
 		<body>
+		 <div class="background"></div>
 		<div class="overlay"></div>
 			<div class="container">
 				<div class="images-wrapper">
