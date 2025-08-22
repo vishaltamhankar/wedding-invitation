@@ -16,13 +16,13 @@
   overflow-x: hidden;
 }
 
-<!-- .background { -->
-  <!-- position: fixed; -->
-  <!-- top: 0; left: 0; -->
-  <!-- width: 100%; height: 100%; -->
-  <!-- background: url('RJ2_1.jpeg') no-repeat center center/cover; -->
-  <!-- z-index: -2; -->
-<!-- } -->
+.background {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: url('RJ2_1.jpeg') no-repeat center center/cover;
+  z-index: -2;
+}
 <!-- body { -->
   <!-- min-height: 100vh; -->
   <!-- background: url('RJ2_1.jpeg') no-repeat center center; -->
@@ -36,34 +36,21 @@
   <!-- flex-direction: column; -->
 <!-- } -->
 
-.background-wrapper {
-  position: relative;
-  width: 100%;
-}
 
-.background-img {
-  position: fixed; /* stays in place on scroll */
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 0;
-}
     /* Overlay - behind text but not decorative images */
 	
 	.overlay {
   position: fixed;
   top: 0; left: 0;
   width: 100%; height: 100%;
-  background: rgba(0,0,0,0.4);
-  z-index: 1;
+  background: rgba(0,0,0,0.5);
+  z-index: -1;
 }
 
     /* Main container */
     .container {
   position: relative;
-  z-index: 2;
+  z-index: 1;
   max-width: 850px;
   margin: 40px auto;
   padding: 40px;
@@ -256,9 +243,7 @@
 </style>
 		</head>
 		<body>
-		 <!-- <div class="background"></div> -->
-		 <div class="background-wrapper">
-  <img src="RJ2_1.jpeg" class="background-img" />
+		 <div class="background"></div>
 		<div class="overlay"></div>
 			<div class="container">
 				<div class="images-wrapper">
