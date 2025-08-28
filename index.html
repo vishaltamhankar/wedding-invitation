@@ -5,9 +5,8 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rohan Weds Jessie </title>
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&amp;family=Open+Sans&amp;display=swap"
-    rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&amp;family=Open+Sans&amp;display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
   <meta property="og:title" content="Rohan & Jessie – Wedding Invitation" />
   <meta property="og:description"
     content="You're invited to celebrate with us on 14th Dec 2025 at Imperial Banquets, Navi Mumbai." />
@@ -51,6 +50,13 @@
       padding: 40px;
       text-align: center;
       color: #FFD700;
+      opacity: 0;
+      animation: fadeInMain 1.2s ease-in-out 0.2s forwards;
+    }
+
+    @keyframes fadeInMain {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: none; }
     }
 
     /* Header */
@@ -145,17 +151,19 @@
       cursor: pointer;
       flex: 1 1 auto;
       max-width: 220px;
-      transition: background 0.3s ease;
+      transition: background 0.3s, box-shadow 0.3s, transform 0.2s;
       white-space: nowrap;
       text-align: center;
       background: linear-gradient(45deg, #4B0082, #9162c4);
-      transition: transform 0.2s, background 0.3s;
+      box-shadow: 0 0 0px 0px #FFD700;
     }
 
-    .rsvp-button:hover {
+    .rsvp-button:hover, .rsvp-button:focus {
       background-color: #9162c4;
       transform: scale(1.05);
       background: linear-gradient(45deg, #9162c4, #4B0082);
+      box-shadow: 0 0 16px 4px #FFD70099, 0 0 4px 1px #fffbe6;
+      outline: none;
     }
 
     /* Modal */
@@ -274,6 +282,14 @@
     section h3 {
       text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
       font-size: 1em;
+    }
+    section h2 {
+      font-family: 'Lora', serif;
+      font-size: 2.2em;
+      color: #fffbe6;
+      margin-bottom: 0.2em;
+      margin-top: 0.7em;
+      letter-spacing: 1px;
     }
   </style>
 </head>
