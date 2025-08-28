@@ -5,7 +5,8 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rohan Weds Jessie </title>
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&amp;family=Open+Sans&amp;display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&amp;family=Open+Sans&amp;display=swap"
+    rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
   <meta property="og:title" content="Rohan & Jessie – Wedding Invitation" />
   <meta property="og:description"
@@ -37,27 +38,34 @@
       left: 0;
       width: 100%;
       height: 100%;
-  background: rgba(0, 0, 0, 0.55);
+      background: rgba(0, 0, 0, 0.55);
       z-index: -1;
     }
 
     /* Main container */
     .container {
-  position: relative;
-  z-index: 1;
-  max-width: 850px;
-  margin: 40px auto;
-  padding: 40px;
-  text-align: center;
-  color: #FFD700;
-  opacity: 0;
-  animation: fadeInMain 1.2s ease-in-out 0.2s forwards;
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18), 0 1.5px 8px 0 rgba(0,0,0,0.10);
+      position: relative;
+      z-index: 1;
+      max-width: 850px;
+      margin: 40px auto;
+      padding: 40px;
+      text-align: center;
+      color: #FFD700;
+      opacity: 0;
+      animation: fadeInMain 1.2s ease-in-out 0.2s forwards;
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18), 0 1.5px 8px 0 rgba(0, 0, 0, 0.10);
     }
 
     @keyframes fadeInMain {
-      from { opacity: 0; transform: translateY(30px); }
-      to { opacity: 1; transform: none; }
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+
+      to {
+        opacity: 1;
+        transform: none;
+      }
     }
 
     /* Header */
@@ -94,14 +102,14 @@
     /* Decorative images wrapper */
     .images-wrapper {
       position: relative;
-      height: 180px;
-      margin-bottom: 10px;
+  height: 110px;
+  margin-bottom: 0.2em;
       z-index: 3;
       /* ensure above overlay */
     }
 
-.bells-blend {
-    mix-blend-mode: screen;
+    .bells-blend {
+      mix-blend-mode: screen;
       position: absolute;
       top: -40px;
       /* moves it higher */
@@ -162,12 +170,21 @@
     }
 
     @keyframes rsvpPulse {
-      0% { box-shadow: 0 0 0 0 #FFD70044; }
-      70% { box-shadow: 0 0 12px 8px #FFD70022; }
-      100% { box-shadow: 0 0 0 0 #FFD70044; }
+      0% {
+        box-shadow: 0 0 0 0 #FFD70044;
+      }
+
+      70% {
+        box-shadow: 0 0 12px 8px #FFD70022;
+      }
+
+      100% {
+        box-shadow: 0 0 0 0 #FFD70044;
+      }
     }
 
-    .rsvp-button:hover, .rsvp-button:focus {
+    .rsvp-button:hover,
+    .rsvp-button:focus {
       background-color: #9162c4;
       transform: scale(1.05);
       background: linear-gradient(45deg, #9162c4, #4B0082);
@@ -298,17 +315,25 @@
       text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
       font-size: 1em;
     }
-     header h3 {
+
+    header h3 {
       text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
       font-size: 1.5em;
     }
+
     section h2 {
       font-family: 'Lora', serif;
-      font-size: 2.2em;
+      font-size: 2em;
       color: #fffbe6;
       margin-bottom: 0.2em;
       margin-top: 0.7em;
       letter-spacing: 1px;
+    }
+
+    .venue-detail {
+  margin-bottom: 0.2em;
+  margin-top: 0.2em;
+  color: #FFD700;
     }
   </style>
 </head>
@@ -318,7 +343,7 @@
   <div class="overlay"></div>
   <div class="container">
     <div class="images-wrapper">
-  <img src="Bells.png" alt="Golden wedding bells" class="bells-img bells-blend" />
+      <img src="Bells.png" alt="Golden wedding bells" class="bells-img bells-blend" />
     </div>
     <header>
       <h3 style="margin-top: 0; margin-bottom:0.3em; font-family: 'Lora', serif;"><b>Ayesha & Timothy Coelho</b></h3>
@@ -326,20 +351,23 @@
       <h1>Rohan</h1>
       <h2>With</h2>
       <h1>Jessie </h1>
-      <p>daughter of </p> </n> <p>Catherine & Justin Lemos</p>
+      <p>daughter of </p>
+      </n>
+      <p>Catherine & Justin Lemos</p>
     </header>
-   
+
     <img src="Rings.png" alt="Wedding rings" class="rings-img"
-  style="display: block; margin: 0 auto; max-width: 150px; margin-bottom: 0;" />
+      style="display: block; margin: 0 auto; max-width: 150px; margin-bottom: 0;" />
     <section>
-  <h2>Venue Details</h2>
-  <h3>Imperial Banquets, Vashi, Navi Mumbai</h3>
-  <h3>Date: 14 Dec 2025</h3>
-  <h3>Time: 07:30 PM</h3>
+  <h3 style="color: #FFD700; margin-bottom:0; text-decoration: underline; font-weight: bold;">Venue:</h3>
+      <h3 class="venue-detail">Imperial Banquets, Vashi, Navi Mumbai</h3>
+      <h3 class="venue-detail">Sunday, 14 Dec 2025</h3>
+      <h3 class="venue-detail">Time: 07:30 PM</h3>
     </section>
     <div class="rsvp-buttons">
       <button class="rsvp-button" onclick="openModal('Yes')" aria-label="RSVP Yes, I will attend">Will attend</button>
-      <button class="rsvp-button" onclick="openModal('No')" aria-label="RSVP No, I will not attend">Will not attend</button>
+      <button class="rsvp-button" onclick="openModal('No')" aria-label="RSVP No, I will not attend">Will not
+        attend</button>
 
       <div id="rsvpModal" class="modal">
         <div class="modal-content">
