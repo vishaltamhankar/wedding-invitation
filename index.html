@@ -250,9 +250,16 @@
 
     @media (max-width: 768px) {
       .background {
-        background-attachment: scroll !important;
+        position: absolute !important;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
         background-size: cover !important;
-        /* prevents zoom issue on mobile */
+        background-repeat: no-repeat !important;
+        background-position: center center !important;
+        z-index: -2;
+        /* prevents zoom issue on mobile by avoiding fixed positioning */
       }
     }
 
@@ -264,10 +271,6 @@
 
     section h2,
     section p,
-	header h3 {
-      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
-      font-size: 1.5em;
-    }
     section h3 {
       text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
       font-size: 1em;
