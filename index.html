@@ -200,7 +200,7 @@
     .modal-content h2 {
       margin-top: 0;
       font-family: 'Great Vibes', cursive;
-      color: #FFD700;
+      color: #B8860B;
     }
 
     .modal-content input,
@@ -209,7 +209,9 @@
       padding: 10px;
       margin: 10px 0;
       border-radius: 5px;
-      border: 1px solid #ccc;
+      border: 1.5px solid #444;
+      background: #fff;
+      color: #222;
     }
 
     .close {
@@ -322,7 +324,7 @@
     <div class="images-wrapper">
       <!-- <img src="https://raw.githubusercontent.com/vishaltamhankar/wedding-invitation/main/TopFlower.jpg" alt="Top flower" class="responsive-abs-image"/> -->
       <!-- <img src="https://raw.githubusercontent.com/vishaltamhankar/wedding-invitation/main/Bells.jpg" alt="Bells" class="bells-img"/> -->
-      <img src="Bells.png" alt="Bells" class="bells-img" style="mix-blend-mode: screen; " />
+      <img src="Bells.png" alt="Golden wedding bells" class="bells-img" style="mix-blend-mode: screen; " />
       <!-- <img src="https://raw.githubusercontent.com/vishaltamhankar/wedding-invitation/main/RJ4.jpeg" alt="RJ" class="right-img"/> -->
       <!-- <img src="RJ4.jpeg" alt="RJ" class="right-img"/> -->
     </div>
@@ -341,7 +343,7 @@
       <p>daughter of Catherine and Justin Lemos</p>
     </header>
    
-    <img src="Rings.png" alt="Rings" class="rings-img"
+    <img src="Rings.png" alt="Wedding rings" class="rings-img"
       style="display: block; margin: 0 auto; max-width: 150px; padding-top: 0px;margin-bottom: 0;" />
     <section>
       <h2>Venue Details</h2>
@@ -350,8 +352,8 @@
       <h3>Time: 07:30 PM</h3>
     </section>
     <div class="rsvp-buttons">
-      <button class="rsvp-button" onclick="openModal('Yes')">Will attend</button>
-      <button class="rsvp-button" onclick="openModal('No')">Will not attend</button>
+      <button class="rsvp-button" onclick="openModal('Yes')" aria-label="RSVP Yes, I will attend">Will attend</button>
+      <button class="rsvp-button" onclick="openModal('No')" aria-label="RSVP No, I will not attend">Will not attend</button>
 
       <div id="rsvpModal" class="modal">
         <div class="modal-content">
