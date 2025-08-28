@@ -37,7 +37,7 @@
       left: 0;
       width: 100%;
       height: 100%;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.6);
       z-index: -1;
     }
 
@@ -100,7 +100,8 @@
       /* ensure above overlay */
     }
 
-    .bells-img {
+.bells-blend {
+    mix-blend-mode: screen;
       position: absolute;
       top: -40px;
       /* moves it higher */
@@ -297,6 +298,10 @@
       text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
       font-size: 1em;
     }
+     header h3 {
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+      font-size: 1.5em;
+    }
     section h2 {
       font-family: 'Lora', serif;
       font-size: 2.2em;
@@ -322,11 +327,7 @@
   <div class="overlay"></div>
   <div class="container">
     <div class="images-wrapper">
-      <!-- <img src="https://raw.githubusercontent.com/vishaltamhankar/wedding-invitation/main/TopFlower.jpg" alt="Top flower" class="responsive-abs-image"/> -->
-      <!-- <img src="https://raw.githubusercontent.com/vishaltamhankar/wedding-invitation/main/Bells.jpg" alt="Bells" class="bells-img"/> -->
-      <img src="Bells.png" alt="Golden wedding bells" class="bells-img" style="mix-blend-mode: screen; " />
-      <!-- <img src="https://raw.githubusercontent.com/vishaltamhankar/wedding-invitation/main/RJ4.jpeg" alt="RJ" class="right-img"/> -->
-      <!-- <img src="RJ4.jpeg" alt="RJ" class="right-img"/> -->
+  <img src="Bells.png" alt="Golden wedding bells" class="bells-img bells-blend" />
     </div>
     <header>
       <h3 style="margin-top: 0; font-family: 'Lora', serif;"><b>Ayesha & Timothy Coelho</b></h3>
@@ -335,16 +336,13 @@
       <h2>With</h2>
       <h1>Jessie </h1>
       <div class="gold-divider" aria-hidden="true">
-        <svg width="120" height="18" viewBox="0 0 120 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <ellipse cx="60" cy="9" rx="58" ry="2.5" fill="#FFD700" fill-opacity="0.7"/>
-          <ellipse cx="60" cy="9" rx="40" ry="1.2" fill="#fffbe6" fill-opacity="0.7"/>
-        </svg>
+  <svg width="120" height="18" viewBox="0 0 120 18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><ellipse cx="60" cy="9" rx="58" ry="2.5" fill="#FFD700" fill-opacity="0.7"/><ellipse cx="60" cy="9" rx="40" ry="1.2" fill="#fffbe6" fill-opacity="0.7"/></svg>
       </div>
       <p>daughter of Catherine and Justin Lemos</p>
     </header>
    
     <img src="Rings.png" alt="Wedding rings" class="rings-img"
-      style="display: block; margin: 0 auto; max-width: 150px; padding-top: 0px;margin-bottom: 0;" />
+  style="display: block; margin: 0 auto; max-width: 150px; margin-bottom: 0;" />
     <section>
       <h2>Venue Details</h2>
       <h3>Imperial Banquets, Vashi, Navi Mumbai</h3>
